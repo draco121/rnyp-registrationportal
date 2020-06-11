@@ -1,0 +1,203 @@
+<html>
+
+<head>
+    <title>
+        Registration Form
+    </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+        <a class="navbar-brand" href="index.html">RNYP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="card container text-center">
+        <h1>registration form</h1>
+        <h4>note: please fill each and every field of the form very carefully and do not leave any field blank</h4>
+    </div>
+
+    <br>
+    <form id="registrarion" method="POST" name="myform" action="testmysql.php">
+    <div class="card container" style="padding: 50px;">
+        <div class="md-form">
+            <input type="text" name="email" class="form-control" placeholder="example@example.com">
+            <label for="form1">Email * :</label>
+        </div>
+        <div class="md-form">
+            <input type="text" name="phone" class="form-control">
+            <label for="phone">Contact number * :</label>
+        </div>
+        <div class="md-form">
+            <input type="text" name="portfolio" class="form-control" placeholder="please give 3 options">
+            <label for="portfolio">Preferred portfolio * :</label>
+        </div>
+        <div class="md-form">
+            <input type="text" name="school" class="form-control">
+            <label for="school">school/college :</label>
+        </div>
+        <div class="md-form">
+            <input type="text" name="stream" class="form-control"
+                placeholder="school students enter their stream and college students enter their course">
+            <label for="school">Stream/course :</label>
+        </div>
+        <div class="md-form">
+            <select class="mdb-select md-form colorful-select dropdown-primary" name="comittee">
+                <option value="0" disabled selected>please select</option>
+                <option value="Lok Sabha">Lok Sabha</option>
+                <option value="Rajya Sabha">Rajya Sabha</option>
+                <option value="M.P Vidhan Sabha">M.P Vidhan Sabha</option>
+                <option value="International Press(reporter)">International Press(reporter)</option>
+                <option value="Photography">Photography</option>
+                <option value="swadeshi">swadeshi</option>
+            </select>
+            <label class="mdb-main-label">preferred committee :</label>
+            <!--/Blue select-->
+        </div>
+        <div class="md-form">
+            <select class="mdb-select md-form colorful-select dropdown-primary" name="gender">
+                <option value="0" disabled selected>please select</option>
+                <option value="Male">Male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+            <label class="mdb-main-label">Gender :</label>
+            <!--/Blue select-->
+        </div>
+        <div class="md-form">
+            <i class="fas fa-pencil-alt prefix"></i>
+            <textarea name="experience" class="md-textarea form-control" rows="2"
+                placeholder="also,please mention any prize if recieved"></textarea>
+            <label for="form10">Previous experience in youth parliament/MUNs</label>
+        </div>
+        <div class="md-form primary-textarea active-primary-textarea">
+            <textarea name="address" class="md-textarea form-control" rows="1"></textarea>
+            <label for="address">Address :</label>
+        </div>
+        <div class="md-form">
+            <select class="mdb-select md-form colorful-select dropdown-primary" name="class">
+                <optgroup label="Class">
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </optgroup>
+                <optgroup label="Semester">
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                    <option value="IV">IV</option>
+                    <option value="V">V</option>
+                    <option value="VI">VI</option>
+                    <option value="VII">VII</option>
+                    <option value="VIII">VIII</option>
+                    <option value="IX">IX</option>
+                    <option value="X">X</option>
+                </optgroup>
+            </select>
+            <label class="mdb-main-label">class/semester :</label>
+            <!--/Blue select-->
+        </div>
+        <a>accomodation</a>
+        <div class=md-form>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" value="yes" name="radio" id="yes">
+                <label class="form-check-label" for="yes">Yes</label>
+            </div>
+
+            <!-- Material inline 2 -->
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" value="no" name="radio" id="no">
+                <label class="form-check-label" for="no">No</label>
+            </div>
+        </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-rounded">submit</button>    
+        </div>
+</div>
+    </div>
+    </form>
+    <br>
+    
+    <!-- Card -->
+    <footer class="page-footer font-small blue darken-3">
+
+        <!-- Footer Elements -->
+        <div class="container">
+      
+          <!-- Grid row-->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-12 py-5">
+              <div class="mb-5 flex-center">
+      
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+              </div>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row-->
+      
+        </div>
+        <!-- Footer Elements -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3"> 2020 Copyright:
+          <a href="www.rnyp.000webhostapp.com">Ranbhoomi National Youth Parliament</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+    <script type="text/javascript" src="msi.js"></script>
+
+</body>
+
+</html>
